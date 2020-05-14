@@ -1,0 +1,65 @@
+Partitioning of Drosophila and human promoter sequences:
+
+Primary input files: 
+
+   dm6_epd05.sga
+   hg19_epd05.sga
+   dm6_epd05.seq
+   hg19_epd05.seq
+
+Scripts: 
+
+   driver.sh (driver script generating all other files from input file
+   seq2mono.pl (fasta to R-friendly, numerical sequence format)
+
+   Philipp_em2_functions.R (library of EM functions)
+   
+   dm6_epd05_em1.R   3-fold paritioning of Dm promoters with basic algorithm
+   dm6_epd05_em2.R   6-fold paritioning of Dm promoters with new algorithm
+   hg19_epd05_em1.R  3-paritioning of human promoters with basic algorithm
+   hg19_epd05_em2.R  6-paritioning of human promoters with new algorithm
+
+Notes: All four script are based on the same template. The basic algorithm 
+is implemented as a special case of the new algorithm, with the consequence
+that the code is over-kill (ovely complicated) for the basic algorithm. 
+
+The new alglrithm uses a two-stage strategy. During the first stage, 
+a large number of motis are collected by multiple rounds of clustering.
+Then, during the second round these motifs are clusterd using 
+hiearchical clustering, subclasses are defined by cutting the tree 
+at a particular height, and the k most abundant classes are retained
+
+Secondary input files (sequences R-friendly format)
+
+ - dm6_epd05.dat
+ - hg19_epd05.dat
+
+Primary output files:
+
+ - dm6_epd05_classes.sga   3-fold classification of Drosophila prometers
+ - hg19_epd05_classes.sga  6-fold classification of human promoters
+
+   The class affilication appears in the last field.
+
+Subdirectories
+
+ ./img 
+
+   sequence Logos for the promoter subclasses: 
+   example: cons_hg19_K6_s1_003_3.00.jpg 
+   Note that the last element of the name (just before 
+   the extension .jpg) indicates the frequency (%) of the 
+   class.
+
+ ./results
+
+ - all-in-one clustering output files from stage 1.
+   example: hg19_K6_s1.dat.
+   One row corresponds to subclass. The first element contains 
+   the probability of the subclass. The follwing 4 elements the 
+   base composition at the first sequence position, etc. 
+ - all-in-one clustering output files from stage 2.
+   example: cons_hg19_K6_s1.dat
+ - base probability matrices (N x 4) for classes
+   file
+
