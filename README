@@ -1,8 +1,8 @@
 R scripts and data collections to generate the analysis and igures
 published in:
 
-* Identification of a functional downstream core promoter element in
-  human promoters using an Expectation-Maximization algorithm.
+* Computational identification and experimental characterization 
+  of preferred downstream positions in human core promoters  
 
 Please refer to the README files in the directories
 'clusteringAlgorithms/' and 'phylogeneticsAnalysis/' for a detailed
