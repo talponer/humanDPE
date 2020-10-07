@@ -1,0 +1,16 @@
+This directory contains the following files R:
+
+- em_functions.R : function for the basic algorithm.
+
+- em_ext_functions.R: function for the extended algorithm.
+
+- analysisInrDpe.R : D. melanogaster and H. sapiens analysis using the
+  basic algorithm with 3 classes. This script was used to generate
+  results presented in figure 2
+
+- analysisInrDpe_allMotifs.R: basic analysis extended to all other
+  organisms
+
+- phylogeneticAnalysis6classes.R : extended analysis performed on all
+  10 organisms. This script was used to present result in Figure 3, 6
+  and S1
