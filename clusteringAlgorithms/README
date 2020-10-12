@@ -19,7 +19,7 @@ Scripts:
    hg19_epd05_em1.R  3-paritioning of human promoters with basic algorithm
    hg19_epd05_em2.R  6-paritioning of human promoters with new algorithm
 
-Notes: All four script are based on the same template. The basic algorithm 
+Notes: All four scripts are based on the same template. The basic algorithm 
 is implemented as a special case of the new algorithm, with the consequence
 that the code is over-kill (ovely complicated) for the basic algorithm. 
 
