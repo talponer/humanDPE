@@ -1,0 +1,39 @@
+Scripts for making components of Figure 2:
+
+Input files:
+
+Position probability matrices
+
+   cons_dm6_K3_s1_1.mat
+   cons_dm6_K3_s1_2.mat
+   cons_dm6_K3_s1_3.mat
+   cons_hg19_K3_s1_1.mat
+   cons_hg19_K3_s1_2.mat
+   cons_hg19_K3_s1_3.mat
+
+Scripts: 
+
+Unmodified scripts from seqLogo R package downloaded from
+http://bioconductor.org/packages/release/bioc/src/contrib/seqLogo_1.54.3.tar.gz
+
+   pwm.R
+   seqLogo.R
+
+Script defining customized seqLogo2 function for Figure 2
+
+   seqLogo2_fig2.R
+
+Script to generate the sequence logos for Figure 2 in PDF fromat 
+
+   fig2.R (Usage Rscript --vanilla fig2.R)
+
+Output files:
+
+Sequence logos
+
+   fig2_dm6_class1_logo.pdf
+   fig2_dm6_class2_logo.pdf
+   fig2_dm6_class3_logo.pdf
+   fig2_hg19_class1_logo.pdf
+   fig2_hg19_class2_logo.pdf
+   fig2_hg19_class3_logo.pdf

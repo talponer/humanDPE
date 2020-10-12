@@ -1,0 +1,56 @@
+# Bootstrap analysis of human promoter classes
+
+Primary input file:
+
+Complete promoter sequence set in R-friendly format, from -50 to +51
+
+   ./data/hg19_epd05.dat
+
+Secondary input files: 
+
+Resampled subsets, from -10 to +41
+
+   ./data/hg19_epd05_s0.dat   (complete set)
+   ./data/hg19_epd05_s1.dat   (resampled set 1)
+     ...
+   ./data/hg19_epd05_s10.dat  (resampled set 10
+
+Intermediate results: 
+
+Results from stage 1 of extended algorithms (300 motifs for each round)
+
+   ./results/hg19_epd05_K6_s14_s0.dat
+   ./results/hg19_epd05_K6_s14_s1.dat
+     ... 
+   ./results/hg19_epd05_K6_s14_s10.dat
+
+Final results: 
+
+Results from stage 2 of extended algorithm (10 best motifs)
+
+  ./results/hg19_epd05_C10_s14_s0.dat 
+  ./results/hg19_epd05_C10_s14_s1.dat 
+    ...
+  ./results/hg19_epd05_C10_s14_s10.dat 
+
+Analysis:
+
+Correlation plot (original motif against most similar from bootstrap)
+
+   figS2.pdf
+
+R Scripts:
+
+   ./scripts/Philipp_em2_functions.R (partitioning function library)
+   ./scripts/hg19_bootstrap_split.R
+   ./scripts/hg19_bootstrap_phase1.R
+   ./scripts/hg19_bootstrap_phase2.R
+
+   ./figS2.R
+
+Master script to generate everything from primary input file:
+
+   ./hg19_bootstrap.sh
+
+
+

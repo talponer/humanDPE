@@ -1,0 +1,35 @@
+Scripts for making components of Figure 5:
+
+Input files:
+
+ATAC-seq footprints for promoter classes (numerical data)
+
+   dm6_c1_atac_enr.txt
+   dm6_c2_atac_enr.txt
+   dm6_c3_atac_enr.txt
+   hg19_c1_atac_enr.txt
+   hg19_c2_atac_enr.txt
+   hg19_c3_atac_enr.txt
+
+Scripts: 
+
+Individual R scripts for making Figure components (PDF format)
+
+   dm6_c1_atac_enr_short.R
+   hg19_c3_atac_enr_short.R
+   atac_correlation_plot.R
+
+Shell script to generate all figure components at once
+
+   fig5.R (Usage sh fig5.sh)
+
+Output files:
+
+ATAC-seq footprints for proximal promoter ATAC-seq footprints
+
+   dm6_c1_atac_enr_short.pdf
+   hg19_c3_atac_enr_short.pdf
+   
+Correlation similarity matrix
+
+   atac_correlation_plot.pdf
