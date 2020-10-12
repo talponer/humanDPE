@@ -782,7 +782,22 @@ seqLogo(skew(consensus.3,2))
 dev.off()
 
 ######################################################################
+### Plot all logos:
+
+for(S in species){
+    for(M in c('m1','m2','m3')){
+        motif <- get(paste(tolower(S), M, sep='.'))
+        pdf(paste(S,'_',M,'.pdf', sep=''), width=10, height=5)
+        seqLogo(skew(motif,2))
+        dev.off()
+    }
+}
+
+
+######################################################################
 ### Save the session
 ######################################################################
 ## save.image('2020-04-15_promoterAnalysis.RData')
 load('2020-04-15_promoterAnalysis.RData')
+
+
