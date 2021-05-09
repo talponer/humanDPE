@@ -12,5 +12,4 @@ This directory contains the following files R:
   organisms
 
 - phylogeneticAnalysis6classes.R : extended analysis performed on all
-  10 organisms. This script was used to present result in Figure 3, 6
-  and S1
+  10 organisms. This script was used to present result in Figure 6
