@@ -23,5 +23,5 @@ Rscript --vanilla ./scripts/hg19_bootstrap_phase2.R
 
 # Correlation plot
 
-Rscript --vanilla figS2.R 
+Rscript --vanilla figS3.R 
 

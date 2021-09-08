@@ -1,0 +1,36 @@
+R scripts for making components of Figure S7 of Dreos et al. (PLoS Comput Biol. 2021) 
+
+Input files:
+
+Position probability matrices based on mutational analysis of Drosophila promoters
+
+   tollo.mat
+   cg10479.mat
+
+Position probability matrices from computationally defined sequence motifs
+
+   cons_dm6_K3_s1_1.mat
+   cons_hg19_K6_s1_3.mat
+
+Scripts: 
+
+Packages used 
+
+   seqLogo
+
+Script to generate components Figure S7 in PDF fromat 
+
+   figS7.R (Usage Rscript --vanilla figS7.R)
+
+Output files:
+
+Sequence logos
+
+   figS7_cg10479_overskewed_by2.pdf
+   figS7_dm6_c1_overskewed_by2.pdf
+   figS7_hg19_c3_overskewed_by2.pdf
+   figS7_tollo_overskewed_by2.pdf
+
+Correlation plot
+
+   figS7_logo_correlation_plot.pdf

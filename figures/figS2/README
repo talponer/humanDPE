@@ -1,0 +1,39 @@
+R scripts for making components of Figure S2 of Dreos et al. (PLoS Comput Biol. 2021) 
+
+Input files:
+
+Position probability matrices
+
+   cons_dm6_K6_s1_1.mat
+   cons_dm6_K6_s1_2.mat
+   cons_dm6_K6_s1_3.mat
+   cons_dm6_K6_s1_4.mat
+   cons_dm6_K6_s1_5.mat
+   cons_dm6_K6_s1_6.mat
+
+Scripts: 
+
+Unmodified scripts from seqLogo R package downloaded from
+http://bioconductor.org/packages/release/bioc/src/contrib/seqLogo_1.54.3.tar.gz
+
+   pwm.R
+   seqLogo.R
+
+Modified seqLogo2 function for Figure S3
+
+   seqLogo2_figS2.R
+
+Script to generate the sequence logos for Figure S2 in PDF fromat 
+
+   figS2.R (Usage Rscript --vanilla figS2.R)
+
+Output files:
+
+Sequence logos
+
+   figS2 dm6_class1_logo.pdf
+   figS2_dm6_class2_logo.pdf
+   figS2_dm6_class3_logo.pdf
+   figS2_dm6_class4_logo.pdf
+   figS2_dm6_class5_logo.pdf
+   figS2_dm6_class6_logo.pdf

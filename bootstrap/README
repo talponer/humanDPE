@@ -37,7 +37,7 @@ Analysis:
 
 Correlation plot (original motif against most similar from bootstrap)
 
-   figS2.pdf
+   figS3.pdf
 
 R Scripts:
 
@@ -46,7 +46,7 @@ R Scripts:
    ./scripts/hg19_bootstrap_phase1.R
    ./scripts/hg19_bootstrap_phase2.R
 
-   ./figS2.R
+   ./figS3.R
 
 Master script to generate everything from primary input file:
 

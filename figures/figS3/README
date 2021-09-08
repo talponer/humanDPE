@@ -1,0 +1,41 @@
+R scripts for making Figure S3 of Dreos et al. (PLoS Comput Biol. 2021)
+
+Input files:
+
+Motifs obtained from partitioning complete promoter set
+
+   hg19_epd05_C10_s14_s0.dat 
+
+Motifs obtained from partitioning 10 resampled promoter sets 
+
+   hg19_epd05_C10_s14_s1.dat
+   hg19_epd05_C10_s14_s2.dat
+   hg19_epd05_C10_s14_s3.dat
+   hg19_epd05_C10_s14_s4.dat
+   hg19_epd05_C10_s14_s5.dat
+   hg19_epd05_C10_s14_s6.dat
+   hg19_epd05_C10_s14_s7.dat
+   hg19_epd05_C10_s14_s8.dat
+   hg19_epd05_C10_s14_s9.dat
+   hg19_epd05_C10_s14_s10.dat
+
+Format of input files: 
+
+Tab-delimited table. Each row corresponds to one subclass obtained from
+one 10-fold partitioning round. The first column contains the probability
+of each class. The remaining columns define the characteristic
+sequence motifs associated with each class. Columns 2-5 contain the class 
+specific base probabilities at motif positions 1, colums 6-9 the base
+probibilites at position 2, etc.    
+
+Scripts:
+
+Script to generate Figure S3 in PDF fromat 
+
+   figS3.R (Usage Rscript --vanilla figS3.R)
+
+Output files:
+
+Correlation heatmap reflecting bootstrap results 
+
+   figS3.pdf 

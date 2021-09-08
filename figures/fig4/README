@@ -1,8 +1,8 @@
-Scripts for making components of Figure 4:
+R scripts for making components of Figure 4 Dreos et al. (PLoS Comput Biol. 2021)
 
 Input files:
 
-ATAC-seq footprints for promoter classes (numerical data)
+ATAC-seq footprints
 
    dm6_c1_atac_enr.txt
    dm6_c2_atac_enr.txt
@@ -11,28 +11,20 @@ ATAC-seq footprints for promoter classes (numerical data)
    hg19_c2_atac_enr.txt
    hg19_c3_atac_enr.txt
 
-Scripts: 
+Scripts:
 
-Individual R scripts for making Figure components (PDF format)
+Script to generate components of Figure 4 in PDF fromat 
 
-   dm6_c1_atac_enr.R
-   dm6_c2_atac_enr.R
-   dm6_c3_atac_enr.R
-   hg19_c1_atac_enr.R
-   hg19_c2_atac_enr.R
-   hg19_c3_atac_enr.R
-
-Shell script to generate all figure components at once
-
-   fig4.R (Usage sh fig4.sh)
+   fig4.R (Usage Rscript --vanilla fig4.R)
 
 Output files:
 
 ATAC-seq footprints
 
-   dm6_c1_atac_enr.pdf
-   dm6_c2_atac_enr.pdf
-   dm6_c3_atac_enr.pdf
-   hg19_c1_atac_enr.pdf
-   hg19_c2_atac_enr.pdf
-   hg19_c3_atac_enr.pdf
+   fig4_dm6_atac_seq_long.pdf
+   fig4_hg19_atac_seq_long.pdf
+   fig4_atac_seq_short_dpe.pdf
+ 
+Correlation matrix:
+
+   fig4_atac_correlation_matrix.pdf 

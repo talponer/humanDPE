@@ -1,0 +1,22 @@
+R scripts for making Figure S5 of Dreos et al. (PLoS Comput Biol. 2021)
+
+Input files:
+
+YY1 motif enrichment profiles
+
+   hg19_c1_yy1_w16.dat
+   hg19_c2_yy1_w16.dat
+   hg19_c3_yy1_w16.dat
+   hg19_c4-6_yy1_w16.dat
+   hg19_notata_yy1_w16.dat
+   hg19_tata_yy1_w16.dat
+
+Scripts:
+
+Script to generate Figure S5 in PDF fromat 
+
+   figS5.R (Usage Rscript --vanilla figS5.R)
+
+Output file:
+
+   figS5.pdf

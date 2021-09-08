@@ -1,4 +1,4 @@
-Scripts for making components of Figure 3:
+R scripts for making components of Figure 3 of Dreos et al. (PLoS Comput Biol. 2021)
 
 Input files:
 
@@ -19,7 +19,7 @@ http://bioconductor.org/packages/release/bioc/src/contrib/seqLogo_1.54.3.tar.gz
    pwm.R
    seqLogo.R
 
-Script defining customized seqLogo2 function for Figure 3
+Modified seqLogo2 function for Figure 3
 
    seqLogo2_fig3.R
 
@@ -37,5 +37,3 @@ Sequence logos
    fig3_hg19_class4_logo.pdf
    fig3_hg19_class5_logo.pdf
    fig3_hg19_class6_logo.pdf
-
-
